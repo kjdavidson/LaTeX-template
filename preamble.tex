@@ -1,0 +1,29 @@
+% support for unicode characters in pdflatex
+\usepackage[utf8]{inputenc}
+% UK localisation
+\usepackage[UKenglish]{babel}
+% clickable links
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+% mathematical fonts
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% images
+\usepackage{graphicx}
+% font
+\usepackage{lmodern}
+% citation commands
+\usepackage[sort]{natbib}
+% keeps floats in a section
+\usepackage[section]{placeins}
+% DOI hyperlinks
+\usepackage{doi}
+% set up caption sytle
+\usepackage[format=hang,font=small,labelfont=bf]{caption}
+% Page styles
+\usepackage{scrlayer-scrpage}
+% Better tables
+\usepackage{booktabs}
+
+% Required to fix an issue with journal numbers in references
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
